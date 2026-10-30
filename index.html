@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout Website</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <style>
+        *{
+    box-sizing: border-box
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin: 0;
+}
+
+/* style header */
+.header{
+    background-color: rgb(94, 57, 54) ;
+    padding: 5px;
+    text-align: center;
+}
+/*styke untuk menu /topnav*/
+.topnav{
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+/*style untu menu/topnav*/
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: cornsilk;
+    color:brown;
+}
+.column{
+    float:left;
+    padding:10px;
+}
+
+.column.side{
+    width:25%;
+}
+.column.middle{
+    width:50%;
+}
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: rgb(73, 39, 39);
+    text-align:center;
+    padding:10px;
+}
+/*biodata*/
+body{
+    background-image: url(brownstars.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.info{
+    background-color:burlywood;
+    width: 750px;
+    border-radius: 10px;
+    text-align:left;
+    display: flex;
+    border:5px solid maroon;
+    align-items: center;
+    gap: 20px
+}
+div.Title{
+    background-color:beige;
+    width: 500px;
+}
+.parent-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px; 
+  justify-content: center; 
+  align-items: center;
+}
+h2{
+    color: darkred;
+    background-color:blanchedalmond;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.mango{
+ background-color: indianred;
+    height: 400px;
+    width: 250px; 
+  border-radius: 20px;
+  border:solid 10px burlywood;
+  box-shadow: 0 50px 60px rgba(0, 0, 0, 50);
+  /* Always put transition on the base class */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+}
+
+div.mango img{
+    height: 300px;
+    width: 200px;
+}
+div.mango:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 12px 24px black(0.15);
+    background-color:rgba(255, 128, 96, 100);
+}
+div.Favfood{
+    width: 500px;
+    background-color:maroon;
+}
+p.f{
+    text-decoration:underline;
+    text-decoration-style:dotted;
+    text-decoration-color:goldenrod;
+    color:blanchedalmond;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+div.yogurt{
+    background-color: indianred;
+    height: 400px;
+    width: 250px; 
+  border-radius: 20px;
+  border:solid 10px burlywood;
+  box-shadow: 0 50px 60px rgba(0, 0, 0, 50);
+  /* Always put transition on the base class */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, backgroud-color 0.3s ease; 
+}
+
+div.yogurt:hover{
+   transform: translateY(-20px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color:rgba(255, 128, 96, 100);
+}
+
+div.yogurt img{
+    height: 280px;
+    width: 200px;
+}
+div.seafood{
+    background-color: indianred;
+    height: 400px;
+    width: 250px; 
+  border-radius: 20px;
+  border:solid 10px burlywood;
+  box-shadow: 0 50px 60px rgba(0, 0, 0, 50);
+  /* Always put transition on the base class */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+div.seafood img{
+    height:280px;
+    width: 200px;
+}
+div.seafood:hover{
+   transform: translateY(-20px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color:rgba(255, 128, 96, 100);
+}
+div.drink{
+    background-color: indianred;
+    height: 400px;
+    width: 250px; 
+  border-radius: 20px;
+  border:solid 10px burlywood;
+  box-shadow: 0 50px 60px rgba(0, 0, 0, 50);
+  /* Always put transition on the base class */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+div.drink img{
+    height:280px;
+    width: 200px;
+}
+div.drink:hover{
+    transform: translateY(-20px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color:rgba(255, 128, 96, 100);
+}
+div.hobbie{
+    width: 200px;
+    background-color:maroon;
+    border:solid,10px,chocolate;
+    border-radius: 50%;
+    align-items: center;
+
+}
+div.extra{
+    height: 50px;
+}
+.carousel{
+    display: flex;
+  margin:20px auto;  
+  width: 90%;
+  overflow-x: auto;
+}
+.carousel::-webkit-scrollbar{
+    display:none;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 1cm;
+    animation: spin 10s infinite linear;
+    padding-right: 1cm;
+}
+.card{
+    flex: 0 0 5cm;
+    height: 250px;
+    width:250px;
+    background-color:khaki;
+    border:solid 10px maroon;
+    border-radius: 20px;
+}
+.card img{
+    height: 190px;
+    width:175px;
+}
+@keyframes spin{
+    from{translate:0;}
+    to{translate:-100%;}
+}
+.containment{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+.card2{
+    width:250px; height: 350px;
+    background-color:darkred;
+    position:relative;  
+    transform-style: preserve-3d;
+    transition: transform 3s;
+    cursor: pointer;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.4),
+    -5px -10px 20px rgba(0, 0, 0, 0.1);
+    border-radius:10px;
+    border: solid 10px chocolate;
+}
+.card2 img{
+    width: 200px;
+    height: 250px;
+}
+
+.card2:hover{
+    transform: rotateY(180deg);
+}
+.card-face{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 40px;
+}
+.card-face-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: darkred;
+    border-radius:10px;
+}
+.card-face-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: darkred;
+    transform: rotateY(180deg);
+    border-radius:10px;
+}
+div.foto{
+    margin: 20px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid maroon;
+
+}
+
+div.foto img{
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1,1);
+}
+
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1,1);
+}
+.movie{
+    width:250px; height: 350px;
+    background-color:#e8f5bd;
+    border:#fdc6eb solid 2px;  
+    transition: transform 3s;
+    border-radius:10px;
+    cursor: pointer;
+  
+
+}
+.movie img{
+    width: 200px;
+    height: 275px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    display:block;
+    margin-left: 20px;
+    margin-bottom:30px;
+}
+.movie video{
+    position: center;
+    width: 200px;
+    height: 275px;
+    object-fit: cover;
+    position: absolute;
+    margin-left: 20px;
+    margin-bottom:30px;
+    display: block;
+}
+div.movie video.bottom{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    display:block;
+    
+}
+div.movie:hover img.top{
+    opacity: 0;
+}
+
+div.movie:hover video.bottom{
+    opacity: 1;
+}
+div.relative-container{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    gap: 15px; 
+   
+}
+
+.move{
+    display: absolute; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    
+}
+/*biodata*/
+
+    </style>
+    <body>
+        <!-- Membuat Header -->
+        <div class="header">
+            <h1>HEADER</h1>
+        </div>
+        <!-- Membuat menu/navigator bar -->
+         <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="table2.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="STS_92_6.html">STS</a>
+         </div>
+         <!-- Membuat content -->
+           <head>
+        <title>Biodata Diri </title>
+        <link rel="stylesheet" href="biodatastyle.css">
+    </head>
+    <body>
+        <center>
+            <h2> Selamat datang di web pertama saya</h2>
+            <div class="Title">
+            <h1>BIODATA DIRI Nadine 92/4</h1>
+            </div>
+            <div class="info">
+                <div class="foto">
+                    <img src="you.jpeg" alt="nadine" class="top">
+                    <Img src="now.jpeg" class="bottom">
+                </div>
+                <p>
+                    Nama lengkap: Bernadine Roito Poerba<br>
+                    Grade: 9th <br><head>
+                    Tempat Lahir: Jakarta, Indonesia <br>
+                    Tanggal Lahir: 6 December, 20211 <br>
+                    Email: bernadine_10079@smp.santaursulajakarta.sch.id <br>
+                    Number: 085158559348 <br>
+                    Motto: Little by little, day by day. What is meant for you, will find its way.
+                    
+                </p>
+            </div>
+            <div class="Favfood" >
+                <p class="f">
+                    Favorite Food of All Time
+                </p>
+            </div>
+        <div class="parent-container">
+            <div class="mango">
+                <p class="a"> Favorite Fruit</p>
+                 <img src="mango.jpg" alt="Mango Smoothie">
+                 <p class="a"> Mango Smoothie</p>
+            </div>
+            <div class="yogurt" >
+                <p class="a">Favorite Dessert</p>
+                <img src="yogurt.jpg" alt="Yogurt">
+                <p class="a">Yogurt with frozen berries and other toppings</p>
+            </div>
+            <div class="seafood">
+                <p class="a">Favorite Meal</p>
+                <img src="seafood.jpg" alt="Seafood">
+                <p class="a">Seafood: Especially crab, lobster, or small clams</p>
+            </div>
+            <div class="drink">
+                <p class="a">Favorite Beverage</p>
+                <img src="water.jpg" alt="FREAZING COLD WATER">
+                <p class="a"> FREAZING COLD WATER</p>
+            </div>
+         </div>
+         <div class="extra"> </div>
+         <div class="hobbie">
+            <p class="f"> Hobbies </p>
+         </div>
+         <div class="carousel">
+            <div class="group">
+            <div class="card">
+                <p>Reading</p>
+                <img src="reading.jpg" alt="Books">
+            </div>
+            <div class="card">
+                <p>Sleeping</p>
+                <img src="sleeping2.jpg" alt="Sleeping">
+            </div>
+            <div class="card">
+                <p>Eating</p>
+                <img src="eating.jpg" alt="Grizzly eating">
+            </div>
+            <div class="card">
+                <p>Writing</p>
+                <img src="writing.jpg" alt="writing">
+            </div>
+            </div>
+             <div aria-hidden class="group">
+            <div class="card">
+                <p>Reading</p>
+                <img src="reading.jpg" alt="Books">
+            </div>
+            <div class="card">
+                <p>Sleeping</p>
+                <img src="sleeping2.jpg" alt="Sleeping">
+            </div>
+            <div class="card">
+                <p>Eating</p>
+                <img src="eating.jpg" alt="Grizzly eating">
+            </div>
+            <div class="card">
+                <p>Writing</p>
+                <img src="writing.jpg" alt="writing">
+            </div>
+            </div>
+        </div>
+        <div class="Favfood"> 
+            <p class="f">Siblings</p>
+        </div>
+        <div class="extra"></div>
+        <div class="parent-container">
+            <div class="containment">
+            <div class="card2">
+                <div class="card-face-front">
+                <p>Amaria (Older sister)</p>
+                <img src="ria.jpeg" alt="Amaria">
+                </div>
+                <div class="card-face-back">
+                    <p>Amaria (Older sister)</p>
+                    <img src="amaria2.jpeg" alt="amaria">
+                </div>
+            </div>
+            </div>
+            <div class="containment">
+            <div class="card2">
+            <div class="card-face-front">
+                <p>Carrisa (Younger sister)</p>
+                <img src="cari.jpeg" alt="Carrisa">
+            </div>
+            <div class="card-face-back">
+                <p>Carrisa (Younger Sister)</p>
+                <img src="carrisa2.jpeg" alt="Carrisa">
+            </div>
+            </div>
+            </div>
+            <div class="containment">
+            <div class="card2">
+            <div class="card-face-front">
+            <p>Egra (Dawg)</p>
+                <img src="Topdawg.jpeg" alt="Egra">
+            </div>
+            <div class="card-face-back">
+                <p>Egra (Dawg)</p>
+                <img src="egra.jpeg" alt="Egra">
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="extra"></div>
+         <div class="hobbie"> 
+            <p class="f">Favorite Movies/Series</p>
+        </div>
+        <div class="extra"></div>
+        <div class="relative-container">
+            <div class="movie">
+            <p> Hilda</p>
+            <div class="move">
+            <img src="hilda3.jpg" class="top">
+            <video controls autoplay muted loop playsinline src="hillss.mp4" type="video/mp4" class="bottom"> </video>
+            </div>
+           </div>
+            <div class="movie">
+            <p>Spiderman</p>
+            <div class="move">
+            <img src="spiderverse.jpg" class="top">
+            <video autoplay controls muted loop playsinline src="spidey.mp4" type="video/mp4" class="bottom"></video>
+            </div>
+            </div>
+            <div class="movie">
+            <p>Voltron</p>
+            <div class="move">
+            <img src="voltron.jpg" class="top">
+            <video autoplay controls muted loop playsinline src="volts.mp4" class="bottom"></video>
+            </div>
+            </div>
+            <div class="movie">
+            <p>The Owl House</p>
+            <div class="move">
+            <img src="owlsss.jpg" class="top">
+            <video autoplay controls muted loop playsinline src="toh.mp4" class="bottom"></video>
+            </div>
+            </div>
+            <div class="movie">
+            <p>Troll Hunters</p>
+            <div class="move">
+            <img src="titans.jpg" class="top">
+            <video autoplay controls muted loop playsinline src="trolling.mp4" class="bottom"></video>
+            </div>
+            </div>
+            
+            </div>
+       
+        </center>
+          <!--  
+          <div class="row">
+            <div class="column side">
+                <h2>Isi Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita similique officia ratione? Amet ullam laboriosam delectus odit minima, eveniet numquam dolor doloremque iusto, fugit ea sint molestias nemo cumque.</p>
+            </div>
+            <div class="column middle">
+                <h2>Isi content</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo deleniti quae doloremque repellat eos voluptatibus nobis error voluptates, itaque fuga, in, reprehenderit minus quidem necessitatibus incidunt quis assumenda quos libero?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem quaerat minima culpa aspernatur asperiores fugit obcaecati, dignissimos corporis saepe et delectus, sunt quibusdam quos! Deleniti necessitatibus labore aliquam qui.
+                </p>
+            </div>
+            <div class="column side">
+            <h2> isi content</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, mollitia perferendis. Reprehenderit quod commodi nobis provident enim, ipsum non quaerat sit architecto fugit voluptate impedit, vel dicta! Tempora, nesciunt non!</p>
+          </div>
+          </div>
+        -->
+          <!-- Membuat Footer -->
+           <div class="footer">
+            <p>footer</p>
+           </div>
+    </body>
+</html>

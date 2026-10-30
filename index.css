@@ -1,0 +1,890 @@
+index css
+*{
+    box-sizing: border-box
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin: 0;
+}
+
+/* style header */
+.header{
+    background-color: rgb(94, 57, 54) ;
+    padding: 5px;
+    text-align: center;
+}
+/*styke untuk menu /topnav*/
+.topnav{
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+/*style untu menu/topnav*/
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: cornsilk;
+    color:brown;
+}
+.column{
+    float:left;
+    padding:10px;
+}
+
+.column.side{
+    width:25%;
+}
+.column.middle{
+    width:50%;
+}
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: rgb(73, 39, 39);
+    text-align:center;
+    padding:10px;
+}
+/*biodata*/
+body{
+    background-image: url(brownstars.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.info{
+    background-color:burlywood;
+    width: 750px;
+    border-radius: 10px;
+    text-align:left;
+    display: flex;
+    border:5px solid maroon;
+    align-items: center;
+    gap: 20px
+}
+div.Title{
+    background-color:beige;
+    width: 500px;
+}
+.parent-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px; 
+  justify-content: center; 
+  align-items: center;
+}
+h2{
+    color: darkred;
+    background-color:blanchedalmond;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.mango{
+ background-color: indianred;
+    height: 400px;
+    width: 250px; 
+  border-radius: 20px;
+  border:solid 10px burlywood;
+  box-shadow: 0 50px 60px rgba(0, 0, 0, 50);
+  /* Always put transition on the base class */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+}
+
+div.mango img{
+    height: 300px;
+    width: 200px;
+}
+div.mango:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 12px 24px black(0.15);
+    background-color:rgba(255, 128, 96, 100);
+}
+div.Favfood{
+    width: 500px;
+    background-color:maroon;
+}
+p.f{
+    text-decoration:underline;
+    text-decoration-style:dotted;
+    text-decoration-color:goldenrod;
+    color:blanchedalmond;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+div.yogurt{
+    background-color: indianred;
+    height: 400px;
+    width: 250px; 
+  border-radius: 20px;
+  border:solid 10px burlywood;
+  box-shadow: 0 50px 60px rgba(0, 0, 0, 50);
+  /* Always put transition on the base class */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, backgroud-color 0.3s ease; 
+}
+
+div.yogurt:hover{
+   transform: translateY(-20px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color:rgba(255, 128, 96, 100);
+}
+
+div.yogurt img{
+    height: 280px;
+    width: 200px;
+}
+div.seafood{
+    background-color: indianred;
+    height: 400px;
+    width: 250px; 
+  border-radius: 20px;
+  border:solid 10px burlywood;
+  box-shadow: 0 50px 60px rgba(0, 0, 0, 50);
+  /* Always put transition on the base class */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+div.seafood img{
+    height:280px;
+    width: 200px;
+}
+div.seafood:hover{
+   transform: translateY(-20px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color:rgba(255, 128, 96, 100);
+}
+div.drink{
+    background-color: indianred;
+    height: 400px;
+    width: 250px; 
+  border-radius: 20px;
+  border:solid 10px burlywood;
+  box-shadow: 0 50px 60px rgba(0, 0, 0, 50);
+  /* Always put transition on the base class */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+div.drink img{
+    height:280px;
+    width: 200px;
+}
+div.drink:hover{
+    transform: translateY(-20px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color:rgba(255, 128, 96, 100);
+}
+div.hobbie{
+    width: 200px;
+    background-color:maroon;
+    border:solid,10px,chocolate;
+    border-radius: 50%;
+    align-items: center;
+
+}
+div.extra{
+    height: 50px;
+}
+.carousel{
+    display: flex;
+  margin:20px auto;  
+  width: 90%;
+  overflow-x: auto;
+}
+.carousel::-webkit-scrollbar{
+    display:none;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 1cm;
+    animation: spin 10s infinite linear;
+    padding-right: 1cm;
+}
+.card{
+    flex: 0 0 5cm;
+    height: 250px;
+    width:250px;
+    background-color:khaki;
+    border:solid 10px maroon;
+    border-radius: 20px;
+}
+.card img{
+    height: 190px;
+    width:175px;
+}
+@keyframes spin{
+    from{translate:0;}
+    to{translate:-100%;}
+}
+.containment{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+.card2{
+    width:250px; height: 350px;
+    background-color:darkred;
+    position:relative;  
+    transform-style: preserve-3d;
+    transition: transform 3s;
+    cursor: pointer;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.4),
+    -5px -10px 20px rgba(0, 0, 0, 0.1);
+    border-radius:10px;
+    border: solid 10px chocolate;
+}
+.card2 img{
+    width: 200px;
+    height: 250px;
+}
+
+.card2:hover{
+    transform: rotateY(180deg);
+}
+.card-face{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 40px;
+}
+.card-face-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: darkred;
+    border-radius:10px;
+}
+.card-face-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: darkred;
+    transform: rotateY(180deg);
+    border-radius:10px;
+}
+div.foto{
+    margin: 20px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid maroon;
+
+}
+
+div.foto img{
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1,1);
+}
+
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1,1);
+}
+.movie{
+    width:250px; height: 350px;
+    background-color:#e8f5bd;
+    border:#fdc6eb solid 2px;  
+    transition: transform 3s;
+    border-radius:10px;
+    cursor: pointer;
+  
+
+}
+.movie img{
+    width: 200px;
+    height: 275px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    display:block;
+    margin-left: 20px;
+    margin-bottom:30px;
+}
+.movie video{
+    position: center;
+    width: 200px;
+    height: 275px;
+    object-fit: cover;
+    position: absolute;
+    margin-left: 20px;
+    margin-bottom:30px;
+    display: block;
+}
+div.movie video.bottom{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    display:block;
+    
+}
+div.movie:hover img.top{
+    opacity: 0;
+}
+
+div.movie:hover video.bottom{
+    opacity: 1;
+}
+div.relative-container{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    gap: 15px; 
+   
+}
+
+.move{
+    display: absolute; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    
+}
+/*biodata*/
+
+/*next thing */
+ol{
+    list-style-type: upper-roman;
+}
+table,th,td{
+    border: 1px solid;
+    border-collapse:collapse;
+}
+tr{
+
+    background-color: chocolate;
+}
+table{
+    width: 100%;
+}
+th{
+    height: 30px;
+    background-color: beige;
+}
+td{
+    text-align:center;
+    padding:5px;
+}
+tr:nth-child(even){
+    background-color:rgb(209, 206, 128)
+}
+td:hover{
+    background-color:bisque;
+}
+.gap{
+    width:max-content;
+    height:40px;
+}
+
+li.fruits:hover{
+    background-color:rgb(206, 137, 34)
+}
+
+td.two{
+    background-color: firebrick;
+}
+
+td.two:nth-child(odd){
+    background-color:rgb(192, 134, 110)
+}
+
+td.two:hover{
+    background-color:coral;
+}
+
+.Buahan{
+    width:100%;
+    background-color:rgb(241, 171, 121);
+}
+
+ol {
+background: chocolate;
+padding: 20px;
+margin:10px;
+}
+
+ol li {
+background: #730101;
+color: rgb(253, 255, 202);
+margin: 5px;
+list-style-position: inside;
+}
+
+ul {
+background: rgb(134, 22, 22);
+padding: 20px;
+margin:10px;
+}
+
+ul li{
+    background: #855b32;
+    color: rgb(236, 233, 190);   
+    margin: 5px;
+    list-style-position:inside;
+}
+i.fa-solid.fa-cloud{
+    font-size:10px;
+}
+i.fas.fa-book{
+    font-size:10px;
+}
+
+i.fas.fa-air-freshener{
+    font-size:10px;
+}
+i.fas.fa-cloud-moon{
+    font-size:10px;
+}
+i.fas.fa-dog{
+    font-size:10px;
+}
+
+/*Sts*
+
+body{
+    background-image: url(blackbg.jpg);
+    background-size:auto;
+    background-position: center;
+}
+
+@font-face {
+    font-family: "face";
+    src: url(new_romantics/ROMANTIC.TTF);
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url(EnkaDotMincho24/EnkaDotMincho24.ttf);
+}
+@font-face {
+    font-family: "Cityname";
+    src: url(symphonie-calligraphy-demo/SymphonieCalligraphyDEMO-Regular.otf);
+}
+@font-face {
+    font-family: "fancy";
+    src: url(fancycursive/MarketingDisparitiesDemoRegular-m27a9.ttf)
+}
+
+.Japan{
+ width: 95%;
+ height:200px;
+ justify-content: center;
+ align-items: center;
+}
+.Japan img{
+    width:100%;
+    height:100%;
+    border: solid 5px rgb(227, 224, 224);
+    object-fit: cover;
+}
+h1.a{
+    font-family: "pixel" ;
+    color:#010108;
+}
+.scrolling {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	margin-top: 50px;
+}
+.scrolling h1 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	line-height: 50px;
+	transform: translateX(100%);
+	animation: scrolling 12s linear infinite;
+}
+@keyframes scrolling {
+	0% {
+		transform: translateX(140%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+.text-container{
+    background-color: rgb(210, 216, 220);
+}
+.extra{
+    height: 25px;
+}
+
+div.foto{
+    margin: 20px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(28, 28, 28);
+
+}
+
+div.foto img{
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1,1);
+}
+
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1,1);
+}
+div.disney{
+    background-image:url(cardbg.jpg);
+    background-size:auto;
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    text-align:left;
+    display: flex;
+    border:5px solid rgb(30, 30, 30);
+    align-items: center;
+    margin-top:25px;
+    justify-content: center;
+}
+.placecards{
+    text-align: left;
+    height: 500px;
+    width: 700px;
+}
+.tokyo{
+    height: 500px;
+    width:1200px;
+    background-color: rgb(211, 212, 214,50%);
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+}
+.extra2{
+    height: 5px;
+}
+.cityimage{
+    height: 300px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    position:relative;
+    z-index:1;
+}   
+.cityimage img{
+    height: 300px;
+    width: 250px;
+}
+h2{
+    font-family: "cityname";
+    color:aliceblue;
+}
+.citycontainer{
+    display: flex;
+    height: 450px;
+    width: 300px;
+    position: relative;
+    flex-wrap:wrap;
+    padding: 10px;
+}
+.citycards{
+    height: 300px;
+    width:250px;
+    position: relative;
+    background:#010108;
+    margin: 30px 10px;
+    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+}
+.citycards:hover{
+    height: 500px;
+}
+p.b{
+    color:aliceblue
+}
+div.relative-container{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    gap: 15px; 
+}
+.cityinfo{
+    position: relative;
+    margin-top:-140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity:0;
+    transition: 0.5s ease-in-out;
+}
+.citycards:hover .cityinfo{
+    visibility:visible;
+    opacity:1;
+    margin-top: -20px;
+    transition-delay:0.3s;
+
+}
+.links{
+    text-align: center;
+    height: 500px;
+    width: 700px;
+    display:grid;
+    align-items: center;
+    justify-content:center;
+}
+.movie{
+    width:450px; height: 150px;
+    border:#050003 solid 2px;  
+    transition: transform 3s;
+    border-radius:10px;
+    cursor: pointer;
+}
+.movie img{
+  width:425px; height: 125px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    display:block;
+    margin-left: 12px;
+    margin-top:10px;
+}
+.movie video{
+    position: center;
+    width:425px; height: 125px;
+    object-fit: cover;
+    position: absolute;
+    display: block;
+    margin-left: 12px;
+    margin-top:10px;
+}
+div.movie video.bottom{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    display:block;
+    
+}
+div.movie:hover img.top{
+    opacity: 0;
+}
+
+div.movie:hover video.bottom{
+    opacity: 1;
+}
+div.relative-container{
+    position:relative;
+    display:grid;
+    gap:20px;
+}
+.move{
+    display: absolute; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    
+}
+.links{
+    height:400px;
+    width: 800px;
+
+}
+.guides{
+    height: 420px;
+    width:1200px;
+    background-color: rgb(211, 212, 214,50%);
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+}
+h3.c{
+    background-color:rgba(8, 8, 8, 0.379);
+    font-family:"fancy";
+}
+.wrapper{
+    padding:0.8rem 0px;
+    color: rgb(253, 253, 253);
+    font-size:15px;
+}
+.marquee-text p{
+    border: 2px solid white;
+    padding: 0.5rem 0.8rem; 
+    background-color: rgb(0, 0, 0);
+    font-family: "pixel";
+}
+.marquee-text {
+    overflow:clip;
+    background-color:rgba(20, 20, 20, 0.80);
+    height: 60px;
+}
+.marquee-text-track{
+    display: flex;
+    gap: 1cm;
+    animation: marquee-move-text 12s linear infinite;
+    width:max-content;
+    padding-left:0.5rem;
+}
+@keyframes marquee-move-text{
+    to {
+        transform:translateX(-50%)
+    }
+}
+.containment{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0); 
+    gap: 5cm;
+}
+.card2{
+    width:250px; height: 350px;
+    background-image: url(sznsbg.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;  
+    transform-style: preserve-3d;
+    transition: transform 3s;
+    cursor: pointer;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.4),
+    -5px -10px 20px rgba(0, 0, 0, 0.1);
+    border: solid 10px rgb(62, 61, 61);
+}
+.card-face-back img{
+    width: 200px;
+    height: 150px;
+    background-position:cover;
+}
+.card-face-front img{
+    width: 200px;
+    height: 275px;
+    background-position:cover;
+}
+.parent-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px; 
+  justify-content: center; 
+  align-items: center;
+}
+.card2:hover{
+    transform: rotateY(180deg);
+}
+.card-face{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+.card-face-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(sznsbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-face-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(sznsbg.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180deg);
+}
+h3.szn{
+    background-color:rgba(249, 249, 249, 0.559);
+    font-family:"cityname";
+    width: 200px;
+}
+p.sap{
+    font-family:"pixel";
+    background-color:rgba(105, 102, 102, 0.74);
+    border: 2px solid white;
+    width: 200px;
+    font-size:10px;
+}

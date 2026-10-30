@@ -1,0 +1,27 @@
+/* eksternal css*/
+body{
+    background-color:azure;
+}
+h1{
+    font-family:'Courier New', Courier, monospace;
+    background-color:crimson;
+    text-align: center;
+}
+p{
+    color:blueviolet;
+    font-size: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p.a{text-align: right;}
+p.b{text-align: center;}
+p.c{text-align: left;}
+
+h2{text-decoration: line-through;
+        text-decoration-color:burlywood;
+        text-decoration-style: dashed}
+h3{text-decoration:overline;
+    text-decoration-style:dotted;}
+h4{text-decoration:underline;
+    text-decoration-style: double;}
+p.ou{text-decoration: overline underline;
+    text-decoration-style: wavy;}

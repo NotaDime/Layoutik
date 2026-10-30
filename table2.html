@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout Website</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- Membuat Header -->
+        <div class="header">
+            <h1>HEADER</h1>
+        </div>
+        <!-- Membuat menu/navigator bar -->
+         <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="table2.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="STS_92_6.html">STS</a>
+         </div>
+        <!-- Membuat content -->
+            <h2>Colspan dan Rowspan pada Table</h2>
+        <!-- Colspan: menggabungkan kolom
+            Rowspan: Menggabungkan baris -->
+        <table>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Nama</th>
+                <th colspan="2">Nilai</th>
+            </tr>
+            <tr>
+                <th>Ulangan 1</th>
+                <th>Ulangan 2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Glori</td>
+                <td>90</td>
+                <td>93</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dhira</td>
+                <td>30</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ev</td>
+                <td>92</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Keisha</td>
+                <td>80</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Felicia</td>
+                <td>80</td>
+                <td>85</td>
+            </tr>
+        </table>
+        <div class="gap"></div>
+        <table>
+            <tr>
+                <td class="two" rowspan="3">A</td>
+                <td rowspan="2" class="two">B</td>
+                <td colspan="2" class="two">C</td>
+                <td rowspan="3" class="two">D</td>
+                <td rowspan="4" class="two">E</td>
+                <td rowspan="2" class="two">N</td>
+                <td rowspan="6" class="two">H</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="two">F</td>
+                <td class="two">G</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="two"> I</td>
+                <td class="two">J</td>
+                <td class="two">K</td>
+                <td rowspan="2" class="two">O</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="two">M</td>
+            </tr>
+            <tr>
+            <td rowspan="2" class="two">P</td>
+            <td colspan="2" class="two">Q</td>
+            <td rowspan="2" class="two">R</td>
+            <td class="two">U</td>
+            <td class="two">V</td>
+            <td class="two">W</td>
+            </tr>
+            <tr>
+                <td class="two">S</td>
+                <td class="two">T</td>
+                <td class="two">X</td>
+                <td class="two">Y</td>
+                <td class="two">Z</td>
+            </tr>
+        </table>
+ <!-- Membuat Footer -->
+           <div class="footer">
+            <p>footer</p>
+           </div>
+    </body>
+</html>
